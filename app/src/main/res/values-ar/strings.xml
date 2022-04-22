@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_dashboard">تعرف علينا</string>
+    <string name="title_notifications">شاركنا</string>
+    <string name="join">شاركنا الآن!</string>
+    <string name="price1">16.99$</string>
+    <string name="price2">19.99$</string>
+    <string name="name1">Gator Skateboard</string>
+    <string name="name2">Old School Skateboard</string>
+    <string name="description1">Gator Skateboard \n \n colorful skateboards for teens \n \n 16.99$</string>
+    <string name="description2">Old School Skateboard \n \n colorful skateboards for teens \n \n 19.99$</string>
+    <string name="go_back_to_home_page">العودة للصفحة الرئيسية</string>
+    <string name="remove">احذف</string>
+    <string name="check_out">ادفع</string>
+    <string name="info">
+انشأ فريق مصري هذا المشروع بهدف مساعدة أولئك الذين يحبون التزحلق ولكن لا يجدون مكان ليتزحلقوا به.
+        نحن نقدم لك مكان آمن لتستمتع بالتزحلق مع أصدقاءك في بيئة محكمة بوجود مدربين مؤهلين،
+        كما أنك تستطيع أن تشارك في دورات التدريب بدون أن تضع  في بالك تكلفة شراء لوح تزحلق حيث أنك تستطيع أن تأجر واحد من هنا.
+حيث أننا نقدم مجموعة متنوعة من ألواح التزحلق للإيجار وللبيع. إذهب لتختارك لوحك الآن!/n/n
+إذا كنت تحب التزحلق فهنيئًا لك أنت في المكان الصحيح!
+    </string>
+    <string name="who_are_we">من نحن؟</string>
+    <string name="contact_us">تواصل معنا</string>
+</resources>
