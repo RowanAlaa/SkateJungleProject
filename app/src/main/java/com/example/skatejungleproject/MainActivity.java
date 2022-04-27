@@ -1,30 +1,29 @@
 package com.example.skatejungleproject;
-
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import com.example.skatejungleproject.ui.notifications.NotificationJobService;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.example.skatejungleproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
-
+    private JobScheduler scheduler;
+    private static final int JOB_ID = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        com.example.skatejungleproject.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -34,9 +33,25 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+        ComponentName serviceName = new ComponentName(getPackageName(),
+                NotificationJobService.class.getName());
+        JobInfo.Builder builder = new JobInfo.Builder(JOB_ID, serviceName);
+
+        JobInfo myJobInfo = builder.build();
+
+        scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
+        scheduler.schedule(myJobInfo);
     }
     public void launchSecondActivity(View view){
         Intent intent = new Intent(this, Skateboards.class);
         startActivity(intent);
+    }
+    @Override
+    protected void onDestroy() {
+        if (scheduler != null) {
+            scheduler.cancelAll();
+            scheduler = null;
+        }
+        super.onDestroy();
     }
 }

@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/drawable-anydpi-v24/ic_android .xml" value="0.168" />
+        <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/drawable/ic_job_running.xml" value="0.1915" />
         <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/activity_skateboards.xml" value="0.2" />
         <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
-        <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/NEXT/AndroidStudioProjects/SkateJungleProject/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
       </map>
     </option>

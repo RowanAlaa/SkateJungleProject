@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,16 +48,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/imageView" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="0dp"
-                    android:layout_height="10dp"
-                    android:backgroundTint="#0017120C"
-                    android:textColor="@color/white"
-                    android:textSize="0sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -66,7 +57,7 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView3"
+                    android:id="@+id/cardView31"
                     android:layout_width="176dp"
                     android:layout_height="218dp"
                     android:layout_margin="10dp"
@@ -111,6 +102,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/img" />
 
                         <TextView
+                            android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center_horizontal"
@@ -137,6 +129,7 @@
 
 
                 </androidx.cardview.widget.CardView>
+
 
                 <androidx.cardview.widget.CardView
 
@@ -239,14 +232,28 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
             <TextView
+                android:id="@+id/textview16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:justificationMode="inter_word"
-                android:textColor="@color/white"
                 android:text="We are Egyptian Skaters passionates who love skating and want to spread it everywhere. We offer you a safe area to  practise your hobby and empower it with qualified couches."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:justificationMode="inter_word"
+                android:text="We are Egyptian Skaters passionates who love skating and want to spread it everywhere. We offer you a safe area to  practise your hobby and empower it with qualified couches."
+                android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
     </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
