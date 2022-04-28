@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <!--
+        In the above cardview widget
+        cardelevation property will give elevation to your card view
+        card corner radius will provide radius to your card view
+        card background color will give background color to your card view
+        card max elevation will give the cardview maximum elevation
+        card prevent corner overlap will add padding to CardView on v20 and
+        before to prevent intersections between the Card content and rounded corners.
+        card use compact padding will add padding in API v21+ as well to have the same
+        measurements with previous versions.
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp">
+
+        <!--ImageVIew to display our Course Image-->
+        <ImageView
+            android:id="@+id/idIVCourseImage"
+            android:layout_width="42dp"
+            android:layout_height="132dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/skateboard7" />
+
+        <!--Text View to display Course Name-->
+
+        <!--Text VIew to display Course Rating-->
+        <!--Image used in present in drawable folder-->
+
+        <TextView
+            android:id="@+id/idTVCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourseImage"
+            android:text="@string/course_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVSkateboard_desc"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/idTVCourseName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toEndOf="@id/idIVCourseImage"
+            android:drawablePadding="1dp"
+            android:justificationMode="inter_word"
+            android:text="@string/skateboard_desc" />
+
+        <TextView
+            android:id="@+id/idTVCourseRating"
+            android:layout_width="58dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/idTVCourseName"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="62dp"
+            android:layout_toEndOf="@id/idIVCourseImage"
+            android:drawablePadding="1dp"
+            android:text="@string/skateboard_price" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

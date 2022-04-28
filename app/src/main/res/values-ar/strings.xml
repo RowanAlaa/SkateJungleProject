@@ -23,4 +23,7 @@
     </string>
     <string name="who_are_we">من نحن؟</string>
     <string name="contact_us">تواصل معنا</string>
+    <string name="course_name">اسم الكورس</string>
+    <string name="skateboard_price">Price1</string>
+    <string name="skateboard_desc">Desc1</string>
 </resources>

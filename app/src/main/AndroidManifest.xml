@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Cart"/>
+        <activity android:name=".Recycler"/>
+        <activity android:name=".Skateboards"/>
         <service
             android:name=".ui.notifications.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"/>

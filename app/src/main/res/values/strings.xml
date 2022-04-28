@@ -16,4 +16,8 @@
     <string name="info">Skate Jungle is constructed by an egyptian team who decided to start a skating project for those who want to skate and can\'t find a place to skate in. We offer you a safe place to enjoy skating with your friends in a controlled environment with presence of qualified trainers and also you can participate in our training sessions without putting in consideration the cost of buying a skateboard as you can rent one. We offer a great variety of skateboard for renting and for selling. Go grab one now! \n\nWe are SKATE JUNGLE if you are interested in skating then congrats you are at the right place!</string>
     <string name="who_are_we">WHO ARE WE?</string>
     <string name="contact_us">CONTACT US</string>
+    <string name="course_name">Skateboard1</string>
+    <string name="skateboard_price">Price1</string>
+    <string name="skateboard_desc">Desc1</string>
+
 </resources>
