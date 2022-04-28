@@ -22,6 +22,9 @@
         <activity android:name=".Cart"/>
         <activity android:name=".Recycler"/>
         <activity android:name=".Skateboards"/>
+        <activity android:name=".Review1" android:exported="true"/>
+        <activity android:name=".Submit" />
+
         <service
             android:name=".ui.notifications.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"/>

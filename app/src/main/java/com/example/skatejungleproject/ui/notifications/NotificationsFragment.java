@@ -1,16 +1,23 @@
 package com.example.skatejungleproject.ui.notifications;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProvider;
+
+import com.example.skatejungleproject.R;
+import com.example.skatejungleproject.Submit;
 import com.example.skatejungleproject.databinding.FragmentNotificationsBinding;
 
-public class NotificationsFragment extends Fragment {
+public class NotificationsFragment extends Fragment{
 
     private FragmentNotificationsBinding binding;
 
@@ -24,6 +31,10 @@ public class NotificationsFragment extends Fragment {
 
         final TextView textView = binding.textView10;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+      Intent intent = new Intent(getActivity(), Submit.class);
+      startActivity(intent);
+
         return root;
     }
 
@@ -32,4 +43,6 @@ public class NotificationsFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
 }
